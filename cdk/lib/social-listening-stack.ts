@@ -9,7 +9,7 @@ export class SocialListeningStack extends cdk.Stack {
     super(scope, id, props);
 
     const image = new ecr_assets.DockerImageAsset(this, 'AppImage', {
-      directory: path.join(__dirname, '../docker-app'),
+      directory: path.join(__dirname, '../../docker-app'),
     });
 
     new apprunner.CfnService(this, 'AppRunnerService', {
