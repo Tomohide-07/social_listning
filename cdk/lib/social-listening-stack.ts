@@ -2,6 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as apprunner from 'aws-cdk-lib/aws-apprunner';
 import * as ecr_assets from 'aws-cdk-lib/aws-ecr-assets';
+import * as path from 'path'; 
 
 export class SocialListeningStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
